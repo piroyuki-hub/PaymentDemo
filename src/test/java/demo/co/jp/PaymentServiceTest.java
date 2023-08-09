@@ -10,7 +10,7 @@ public class PaymentServiceTest {
     /** GMOPG */
     @Test
     void usageGmoTest() {
-        PaymentService service = new PaymentService(PaymentAgency.GMOPG);
+        PaymentService service = PaymentServiceFactory.getService(PaymentAgency.GMOPG);
         service.exec();
         service.search();
     }
@@ -18,7 +18,7 @@ public class PaymentServiceTest {
     /** SB */
     @Test
     void usageSbTest() {
-        PaymentService service = new PaymentService(PaymentAgency.SB);
+        PaymentService service = PaymentServiceFactory.getService(PaymentAgency.SB);
         service.exec();
         service.search();
     }

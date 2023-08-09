@@ -1,15 +1,15 @@
 package demo.co.jp.agency;
 
-import demo.co.jp.Payment;
+import demo.co.jp.PaymentService;
 import demo.co.jp.agency.mockapi.Sb;
 
 /**
  * ソフトバンクペイメントの決済ロジック
  */
-public class SbPayment implements Payment {
+public class SbPaymentService implements PaymentService {
     private final Sb api;
 
-    public SbPayment() {
+    public SbPaymentService() {
         this.api = new Sb();
     }
 

@@ -1,15 +1,15 @@
 package demo.co.jp.agency;
 
-import demo.co.jp.Payment;
+import demo.co.jp.PaymentService;
 import demo.co.jp.agency.mockapi.GmoPg;
 
 /**
  * GMOPG の決済ロジック
  */
-public class GmoPayment implements Payment {
+public class GmoPaymentService implements PaymentService {
     private final GmoPg api;
 
-    public GmoPayment() {
+    public GmoPaymentService() {
         this.api = new GmoPg();
     }
 
